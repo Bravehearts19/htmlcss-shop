@@ -1,17 +1,17 @@
-* {
+* { /* Serve per azzerare margini, paddings ed impostare il font della pagina */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Besley', serif;
 }
 
-.container {
+.container { /* Serve per centrare la pagina */
     background-color: white;
     width: 80%;
     margin: 20px auto 10px;
 }
 
-.card {
+.card { /* Contiene la card_image e il card_text */
     position: relative;
     display: inline-block;
     width: 32%;
@@ -19,20 +19,20 @@
     margin: 0 2px 10px;
 }
 
-.card_image {
+.card_image { /* Contiene le due immagini */
     width: 100%;
     position: relative;
 }
 
-.card_image img{
+.card_image img{ /* Imposta la grandezza delle immagini al massimo */
     width: 100%;
 }
 
-.main_image {
+.main_image { /* Imposta la grandezza dell'immagine al massimo */
     width: 100%;
 }
 
-.over_image {
+.over_image { /* Imposta la grandezza dell'immagine al massimo e la posizione esattamente sopra all'altra */
     display: none;
     width: 100%;
     position: absolute;
@@ -41,11 +41,11 @@
     z-index: 1;
 }
 
-.card_image:hover .over_image {
+.card_image:hover .over_image { /* Serve per mostrare l'over_image che aveva display: none, quando passi con il mouse sopra a card_image */
     display: block;
 }
 
-.heart {
+.heart { /* Serve per posizionare il cuore e crearne sfondo e contorno */
     background-color: white;
     padding: 14px;
     display: inline-block;
@@ -54,13 +54,13 @@
     right: 0;
 }
 
-.card_patches {
+.card_patches { /* Serve per posizionare i badge */
     position: absolute;
     left: 0;
     bottom: 30px;
 }
 
-.discount {
+.discount { /* Crea lo stile per il badge dello sconto */
     color: white;
     font-weight: 700;
     background-color: crimson;
@@ -69,13 +69,16 @@
     margin-right: 5px;
 }
 
-.sustainability {
+.sustainability { /* Crea lo stile per il badge della sostenibilità */
     color: white;
     font-weight: bolder;
     background-color: rgb(0, 148, 111);
     padding: 7px 5px;
     vertical-align: middle;
 }
+
+/* 
+Serie di classi create solamente per chiarezza della finalità dell'elemento alla quale viene assegnata
 
 .card_text {
 
@@ -91,24 +94,24 @@
 
 .card_text_price {
 
-}
+} */
 
-.text_brand {
+.text_brand { /* Crea lo stile del testo della marca */
     word-spacing: normal;
 }
 
-.text_dress {
+.text_dress { /* Crea lo stile del testo del capo di abbigliamento */
     word-spacing: normal;
     font-weight: bolder;
 }
 
-.new_price {
+.new_price { /* Crea lo stile del testo del prezzo nuovo */
     word-spacing: normal;
     color: red;
     font-weight: bold;
 }
 
-.old_price {
+.old_price { /* Crea lo stile del testo del prezzo vecchio */
     word-spacing: normal;
     text-decoration-line: line-through;
 }
