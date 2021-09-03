@@ -2,20 +2,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    word-spacing: 0px;
 }
 
 .container {
     background-color: blue;
     width: 80%;
-    margin: auto;
+    margin: 20px auto;
 }
 
 .card {
-
+    min-height: 250px;
+    position: relative;
+    display: inline-block;
+    width: 32.5%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    word-spacing: 5px;
+/*     margin: auto; */
 }
 
 .card_image {
+    width: 100%;
+    position: relative;
+}
 
+.card_image img{
+    max-width: 100%;
 }
 
 .main_image {
@@ -23,15 +36,41 @@
 }
 
 .over_image {
-
+    display: none;
 }
+
+/* .card:hover .over_image {
+    display: block;
+} */
 
 .heart {
-
+    background-color: white;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
 }
 
-.card_patchs {
+.card_patches {
+    position: absolute;
+    bottom: 40px;
+}
 
+.discount {
+    color: white;
+    font-weight: 700;
+    background-color: crimson;
+    padding: 7px 5px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.sustainability {
+    color: white;
+    font-weight: 900;
+    background-color: rgb(0, 148, 111);
+    padding: 7px 5px;
+    vertical-align: middle;
 }
 
 .card_text {
@@ -42,14 +81,29 @@
 
 }
 
+.card_text_dress {
+
+}
+
 .card_text_price {
 
 }
 
-.new_price {
+.text_brand {
+    word-spacing: normal;
+}
 
+.text_dress {
+    word-spacing: normal;
+}
+
+.new_price {
+    word-spacing: normal;
+    color: red;
+    font-weight: bold;
 }
 
 .old_price {
-    
+    word-spacing: normal;
+    text-decoration-line: line-through;
 }
