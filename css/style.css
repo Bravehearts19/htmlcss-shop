@@ -38,7 +38,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+/*     z-index: 1; In precedenza avevo messo lo z-index maggiore perchè pensavo non dovessero risultare i badge e l'icona (CORRETTO IL 06/09/2021)     */
 }
 
 .card_image:hover .over_image { /* Serve per mostrare l'over_image che aveva display: none, quando passi con il mouse sopra a card_image */
